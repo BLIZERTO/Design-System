@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 
+@layer base {
+    html {
+        font-family: Montserrat, sans-serif;
+    }
+}
+
+
 @layer components {
 
     /*BUTTON*/
         .btn {
             background-color: theme('colors.blue.medium');
-            width: 295px;
-            height: 58px;
             border-radius: theme('borderRadius.rounded');
         }
         .btn:hover{

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    /*BUTTON*/
+        .btn {
+            background-color: theme('colors.blue.medium');
+            width: 295px;
+            height: 58px;
+            border-radius: theme('borderRadius.rounded');
+        }
+        .btn:hover{
+            background-color: theme('colors.blue.medium-h');
+        }
+        .btn:active{
+            background-color: theme('colors.blue.medium-a');
+        }
+        .btn:focus{
+            background-color: theme('colors.blue.dark');
+        }
+        .btn:disabled{
+            background-color: theme('colors.grey.light');
+            color: theme('colors.grey.medium');
+        }
+
+    /* LINK */
+        .link{
+            color : theme('colors.blue.medium')
+        }
+        .link:hover{
+            color : theme('colors.blue.medium-h')
+        }
+        .link:focus{
+            color : theme('colors.blue.dark')
+        }
+        .link:active{
+            color : theme('colors.blue.medium-a')
+        }
+}

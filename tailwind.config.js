@@ -60,6 +60,10 @@ module.exports = {
       '2xl': '3rem',
 
     },
+    borderRadius: {
+      'none': '0',
+      rounded : '20px',
+    },
     extend: {
       spacing: {
         '1': '4px',

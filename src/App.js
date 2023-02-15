@@ -1,10 +1,10 @@
+import './styles/app.css';
+
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-blue-medium underline text-xl">
-        Hello world!
-      </h1>
+     <button type='submit' className={'btn'}></button>
     </div>
   );
 }

@@ -6,58 +6,79 @@
   html {
     font-family: Montserrat, sans-serif;
   }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
 }
 
 @layer components {
+
   /*BUTTON*/
   .btn {
     background-color: theme("colors.blue.medium");
     border-radius: theme("borderRadius.rounded");
+    color: white;
+    padding: 12px;
   }
+
   .btn:hover {
     background-color: theme("colors.blue.medium-h");
   }
+
   .btn:active {
     background-color: theme("colors.blue.medium-a");
   }
+
   .btn:focus {
     background-color: theme("colors.blue.dark");
   }
+
   .btn:disabled {
     background-color: theme("colors.grey.light");
     color: theme("colors.grey.medium");
   }
+
   /* LINK */
   .link {
     color: theme("colors.blue.medium");
   }
+
   .link:hover {
     color: theme("colors.blue.medium-h");
   }
+
   .link:focus {
     color: theme("colors.blue.dark");
   }
+
   .link:active {
     color: theme("colors.blue.medium-a");
   }
+
   /* INPUT */
   .input {
     border-radius: theme("borderRadius.rounded");
     background-color: theme("colors.grey.light");
   }
+
   .input:focus {
     border-color: theme("colors.blue.medium");
     border: 1px solid;
   }
+
   .input:disabled {
     background: none;
-    border-color: theme("color.grey.light");
-    border: 1px solid;
+    border: 1px solid theme("colors.grey.light");
   }
+
   .input::placeholder {
-    color: theme("color.grey.medium");
+    color: theme("colors.grey.medium");
   }
-  .input::placeholder:disabled {
-    color: theme("color.grey.light");
+
+  .input:disabled::placeholder {
+    color: theme("colors.grey.light");
   }
 }

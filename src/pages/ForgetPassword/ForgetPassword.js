@@ -1,16 +1,15 @@
-import "../../styles/app.css";
-
 import Input from "../../atoms/Input";
 import AuthPage from "../../templates/AuthPage";
+import { Link } from "react-router-dom";
 
 function ForgetPassword() {
   return (
     <AuthPage title="Reset password" btnText="Reset password">
       <span className="text-center text-xl">
         Go back to{" "}
-        <a href="#" className="link">
+        <Link to="/" className="link">
           Login
-        </a>
+        </Link>
       </span>
 
       <Input type="text" name="email" label="email" placeholder="Email" />

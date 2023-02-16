@@ -1,16 +1,15 @@
-import "../../styles/app.css";
-
 import Input from "../../atoms/Input";
 import AuthPage from "../../templates/AuthPage";
+import { Link } from "react-router-dom";
 
 function SignIn() {
   return (
     <AuthPage title="Sign In" btnText="Sign In">
       <span className="text-center text-xl">
         Not signed up ?{" "}
-        <a href="#" className="link">
+        <Link to="/signup" className="link">
           Sign Up
-        </a>
+        </Link>
       </span>
 
       <Input type="text" name="email" label="email" placeholder="Email" />
@@ -21,8 +20,9 @@ function SignIn() {
         placeholder="Password"
       />
       <span className="mt-[-16px]">
-        {" "}
-        <a className="link ml-3 text-sm ">Forget your password ?</a>{" "}
+        <Link to="/forget-password" className="link ml-3 text-sm">
+          Forget your password ?
+        </Link>
       </span>
     </AuthPage>
   );

@@ -1,16 +1,15 @@
-import "../../styles/app.css";
-
 import Input from "../../atoms/Input";
 import AuthPage from "../../templates/AuthPage";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
     <AuthPage title="Sign Up" btnText="Sign Up">
       <span className="text-center text-xl">
         Already got an account ?{" "}
-        <a href="#" className="link">
+        <Link to="/" className="link">
           Sign In
-        </a>
+        </Link>
       </span>
       <Input
         type="text"

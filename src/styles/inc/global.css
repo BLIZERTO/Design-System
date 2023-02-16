@@ -41,4 +41,24 @@
         .link:active{
             color : theme('colors.blue.medium-a')
         }
+        /* INPUT */
+        .input{
+            border-radius: theme('borderRadius.rounded');
+            background-color: theme('colors.grey.light');
+        }
+        .input:focus{
+            border-color: theme('colors.blue.medium');
+            border: 1px solid;
+        }
+        .input:disabled{
+            background: none;
+            border-color: theme('color.grey.light');
+            border: 1px solid;
+        }
+        .imput::placeholder{
+          color: theme('color.grey.medium');
+        }
+        .imput::placeholder:disabled{
+           color: theme('color.grey.light');
+        }
 }

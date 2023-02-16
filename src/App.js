@@ -4,7 +4,9 @@ import './styles/app.css';
 function App() {
   return (
     <div className="App">
-     <input type='text' className={'input'}></input>
+
+     <button type='submit' className={'btn'}></button>
+     <input type='text'  disabled className={'input'}></input>
     </div>
   );
 }

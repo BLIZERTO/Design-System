@@ -1,19 +1,30 @@
 import React from "react";
+import Input from "../atoms/Input";
+import Label from "../atoms/Label";
 
-const Button = ({
+const FieldForm = ({
+  children,
   text,
-  onClick,
-  className = "btn",
-  icon = false,
-  iconName,
+  type,
+  name,
+  value,
+  onChange,
+  placeholder,
+  className,
 }) => {
-  /* si on passe icon à true lorsqu'on l'appel, la balise <i> s'affichera sinon non */
   return (
-    <button className={className} onClick={onClick}>
-      {text}
-      {icon && <i className={iconName}></i>}
-    </button>
+    <div>
+      <Label children={children} text={text} />
+      <Input
+        type={type}
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        className={className}
+      />
+    </div>
   );
 };
 
-export default Button;
+export default FieldForm;

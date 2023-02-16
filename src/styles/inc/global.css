@@ -9,9 +9,7 @@
     }
 }
 
-
 @layer components {
-
     /*BUTTON*/
         .btn {
             background-color: theme('colors.blue.medium');
@@ -30,7 +28,6 @@
             background-color: theme('colors.grey.light');
             color: theme('colors.grey.medium');
         }
-
     /* LINK */
         .link{
             color : theme('colors.blue.medium')
@@ -44,6 +41,4 @@
         .link:active{
             color : theme('colors.blue.medium-a')
         }
-
-
 }

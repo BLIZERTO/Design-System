@@ -81,4 +81,9 @@
   .input:disabled::placeholder {
     color: theme("colors.grey.light");
   }
+
+  .error {
+    border-color: theme("colors.red.medium");
+    color: theme("colors.red.medium");
+  }
 }

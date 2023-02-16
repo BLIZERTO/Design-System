@@ -6,17 +6,20 @@ const Input = ({
   value,
   onChange,
   placeholder,
-  className = "input",
+  style = "input",
 }) => {
   return (
-    <input
-      type={type}
-      name={name}
-      value={value}
-      onChange={onChange}
-      placeholder={placeholder}
-      className={className}
-    />
+    <>
+      <label for={name}></label>
+      <input
+        type={type}
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        className={style}
+      />
+    </>
   );
 };
 
